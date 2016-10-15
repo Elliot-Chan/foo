@@ -1,0 +1,63 @@
+$bg-color: rgba(10,20,30, 0.8)
+
+body
+  //background-color: $bg-color
+  color: #ffffff
+
+#nav, header
+  margin-top: 7%
+
+header form
+  max-width: 70%
+
+table
+  margin-top: 5%
+  color: #000
+  background-color: white
+
+@mixin keyframe($animation_name)
+  @-webkit-keyframes #{$animation_name}
+    @content
+  @-moz-keyframes #{$animation_name}
+    @content
+  @-o-keyframes #{$animation_name}
+    @content
+  @keyframes #{$animation_name}
+    @content
+
+@include keyframe(fadein)
+  0%
+    background-color: rgba(0,0,0,0)
+  100%
+    background-color: rgba(0,0,0,0.3)
+
+
+@mixin animation ($delay, $duration, $animation)
+  -webkit-animation-delay: $delay
+  -webkit-animation-duration: $duration
+  -webkit-animation-name: $animation
+  -webkit-animation-fill-mode: forwards /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay
+  -moz-animation-duration: $duration
+  -moz-animation-name: $animation
+  -moz-animation-fill-mode: forwards /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay
+  -o-animation-duration: $duration
+  -o-animation-name: $animation
+  -o-animation-fill-mode: forwards /* this prevents the animation from restarting! */
+
+  animation-delay: $delay
+  animation-duration: $duration
+  animation-name: $animation
+  animation-fill-mode: forwards /* this prevents the animation from restarting! */
+
+td:hover
+  &
+    @include animation(0, 1s, fadein)
+  cursor: pointer
+
+.nav-select:hover
+  color: #c9302c
+
