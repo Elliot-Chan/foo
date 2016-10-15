@@ -108,4 +108,7 @@ table {
     animation-name: fadein_white;
     animation-fill-mode: forwards; }
 
+.nav_no {
+  color: white; }
+
 /*# sourceMappingURL=main.css.map */
