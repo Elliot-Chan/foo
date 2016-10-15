@@ -1,5 +1,30 @@
+@-webkit-keyframes fadein {
+  0% {
+    color: rgba(119, 0, 187, 0.5); }
+  100% {
+    color: #7700bb; } }
+@-moz-keyframes fadein {
+  0% {
+    color: rgba(119, 0, 187, 0.5); }
+  100% {
+    color: #7700bb; } }
+@-o-keyframes fadein {
+  0% {
+    color: rgba(119, 0, 187, 0.5); }
+  100% {
+    color: #7700bb; } }
+@keyframes fadein {
+  0% {
+    color: rgba(119, 0, 187, 0.5); }
+  100% {
+    color: #7700bb; } }
 body {
-  color: #ffffff; }
+  select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  color: #ffffff;
+  font-size: 1.3rem; }
 
 #nav, header {
   margin-top: 7%; }
@@ -15,6 +40,24 @@ header form {
   color: #0077cc;
   cursor: pointer; }
 
+td:hover {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: fadein;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-delay: 0;
+  -o-animation-duration: 1s;
+  -o-animation-name: fadein;
+  -o-animation-fill-mode: forwards;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: fadein;
+  animation-fill-mode: forwards; }
+
 table {
   margin-top: 5%;
   color: white;
@@ -23,26 +66,6 @@ table {
 .table th, .table td {
   border: 0px; }
 
-@-webkit-keyframes fadein {
-  0% {
-    background-color: rgba(255, 255, 255, 0); }
-  100% {
-    background-color: rgba(255, 255, 255, 0); } }
-@-moz-keyframes fadein {
-  0% {
-    background-color: rgba(255, 255, 255, 0); }
-  100% {
-    background-color: rgba(255, 255, 255, 0); } }
-@-o-keyframes fadein {
-  0% {
-    background-color: rgba(255, 255, 255, 0); }
-  100% {
-    background-color: rgba(255, 255, 255, 0); } }
-@keyframes fadein {
-  0% {
-    background-color: rgba(255, 255, 255, 0); }
-  100% {
-    background-color: rgba(255, 255, 255, 0); } }
 td:hover {
   cursor: pointer; }
   td:hover {
@@ -62,8 +85,5 @@ td:hover {
     animation-duration: 1s;
     animation-name: fadein;
     animation-fill-mode: forwards; }
-
-.nav-select:hover {
-  color: #c9302c; }
 
 /*# sourceMappingURL=main.css.map */

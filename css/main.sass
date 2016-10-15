@@ -1,30 +1,5 @@
 $bg-color: rgba(10,20,30, 0.8)
 
-body
-  //background-color: $bg-color
-  color: #ffffff
-
-#nav, header
-  margin-top: 7%
-
-header form
-  max-width: 70%
-#dropdown-menu
-  background-color: black
-#dropdown-menu li
-  background-color: black
-  color: #0077cc
-  cursor: pointer
-
-table
-
-  margin-top: 5%
-  color: rgba(255,255,255,1)
-  background-color: rgba(255,255,255,0)
-
-.table th, .table td
-  border: 0px
-
 @mixin keyframe($animation_name)
   @-webkit-keyframes #{$animation_name}
     @content
@@ -37,9 +12,9 @@ table
 
 @include keyframe(fadein)
   0%
-    background-color: rgba(255,255,255,0)
+    color: rgba(119,0,187,0.5)
   100%
-    background-color: rgba(255,255,255,0)
+    color: rgba(119,0,187,1)
 
 
 @mixin animation ($delay, $duration, $animation)
@@ -63,11 +38,41 @@ table
   animation-name: $animation
   animation-fill-mode: forwards /* this prevents the animation from restarting! */
 
+body
+  select: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  color: #ffffff
+  font-size: 1.3rem
+
+#nav, header
+  margin-top: 7%
+
+header form
+  max-width: 70%
+#dropdown-menu
+  background-color: black
+
+#dropdown-menu li
+  background-color: black
+  color: #0077cc
+  cursor: pointer
+td:hover
+  &
+    @include animation(0, 1s, fadein)
+table
+
+  margin-top: 5%
+  color: rgba(255,255,255,1)
+  background-color: rgba(255,255,255,0)
+
+.table th, .table td
+  border: 0px
+
 td:hover
   &
     @include animation(0, 1s, fadein)
   cursor: pointer
 
-.nav-select:hover
-  color: #c9302c
 
