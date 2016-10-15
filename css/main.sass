@@ -10,12 +10,17 @@ $bg-color: rgba(10,20,30, 0.8)
   @keyframes #{$animation_name}
     @content
 
-@include keyframe(fadein)
+@include keyframe(fadein_purple)
   0%
     color: rgba(170,34,255,0.5)
   100%
     color: rgba(170,34,255,1)
 
+@include keyframe(fadein_white)
+  0%
+    color: rgba(255,255,255,0)
+  100%
+    color: rgba(255,255,255,1)
 
 @mixin animation ($delay, $duration, $animation)
   -webkit-animation-delay: $delay
@@ -58,11 +63,10 @@ header form
   background-color: black
   color: #0077cc
   cursor: pointer
-td:hover
+td a:hover
   &
-    @include animation(0, 1s, fadein)
+    @include animation(0, 1s, fadein_purple)
 table
-
   margin-top: 5%
   color: rgba(255,255,255,1)
   background-color: rgba(255,255,255,0)
@@ -70,9 +74,11 @@ table
 .table th, .table td
   border: 0px
 
-td:hover
+.table a
   &
-    @include animation(0, 1s, fadein)
+    @include animation(0, 2s, fadein_white)
+  color: #fff
+  text-decoration: none
   cursor: pointer
 
 

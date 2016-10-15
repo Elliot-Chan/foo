@@ -1,23 +1,43 @@
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadein_purple {
   0% {
     color: rgba(170, 34, 255, 0.5); }
   100% {
     color: #aa22ff; } }
-@-moz-keyframes fadein {
+@-moz-keyframes fadein_purple {
   0% {
     color: rgba(170, 34, 255, 0.5); }
   100% {
     color: #aa22ff; } }
-@-o-keyframes fadein {
+@-o-keyframes fadein_purple {
   0% {
     color: rgba(170, 34, 255, 0.5); }
   100% {
     color: #aa22ff; } }
-@keyframes fadein {
+@keyframes fadein_purple {
   0% {
     color: rgba(170, 34, 255, 0.5); }
   100% {
     color: #aa22ff; } }
+@-webkit-keyframes fadein_white {
+  0% {
+    color: rgba(255, 255, 255, 0); }
+  100% {
+    color: white; } }
+@-moz-keyframes fadein_white {
+  0% {
+    color: rgba(255, 255, 255, 0); }
+  100% {
+    color: white; } }
+@-o-keyframes fadein_white {
+  0% {
+    color: rgba(255, 255, 255, 0); }
+  100% {
+    color: white; } }
+@keyframes fadein_white {
+  0% {
+    color: rgba(255, 255, 255, 0); }
+  100% {
+    color: white; } }
 body {
   select: none;
   -webkit-user-select: none;
@@ -40,22 +60,22 @@ header form {
   color: #0077cc;
   cursor: pointer; }
 
-td:hover {
+td a:hover {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 1s;
-  -webkit-animation-name: fadein;
+  -webkit-animation-name: fadein_purple;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-delay: 0;
   -moz-animation-duration: 1s;
-  -moz-animation-name: fadein;
+  -moz-animation-name: fadein_purple;
   -moz-animation-fill-mode: forwards;
   -o-animation-delay: 0;
   -o-animation-duration: 1s;
-  -o-animation-name: fadein;
+  -o-animation-name: fadein_purple;
   -o-animation-fill-mode: forwards;
   animation-delay: 0;
   animation-duration: 1s;
-  animation-name: fadein;
+  animation-name: fadein_purple;
   animation-fill-mode: forwards; }
 
 table {
@@ -66,24 +86,26 @@ table {
 .table th, .table td {
   border: 0px; }
 
-td:hover {
+.table a {
+  color: #fff;
+  text-decoration: none;
   cursor: pointer; }
-  td:hover {
+  .table a {
     -webkit-animation-delay: 0;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: fadein_white;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-delay: 0;
-    -moz-animation-duration: 1s;
-    -moz-animation-name: fadein;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: fadein_white;
     -moz-animation-fill-mode: forwards;
     -o-animation-delay: 0;
-    -o-animation-duration: 1s;
-    -o-animation-name: fadein;
+    -o-animation-duration: 2s;
+    -o-animation-name: fadein_white;
     -o-animation-fill-mode: forwards;
     animation-delay: 0;
-    animation-duration: 1s;
-    animation-name: fadein;
+    animation-duration: 2s;
+    animation-name: fadein_white;
     animation-fill-mode: forwards; }
 
 /*# sourceMappingURL=main.css.map */
