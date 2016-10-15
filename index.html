@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Foo Website</title>
+    <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <!-- Bootstrap -->
-    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -15,9 +15,7 @@
 </div>
 <div class="container-fluid can_hide">
     <header class="container-fluid">
-        <!--<img class="col-xs-4 col-sm-3 col-lg-2 " src="img/nav-logo.png" alt="">-->
-        <span class="col-xs-4 col-sm-3 col-lg-2 "><h4>    </h4></span>
-        <form class="col-lg-4 col-md-3 col-sm-3 input-group">
+        <form class="offset-lg-2 col-lg-4 offset-md-2 col-md-3 offset-sm-2 col-sm-3 input-group">
             <input autocomplete="off" type="text" class="form-control input-group-addon" placeholder="Input text here" onkeydown="keyDown(event)" id="content">
             <div class="input-group-btn">
                 <button type="button" class="btn btn-primary" title="Google" id="engine" onclick="alert_engine(title)">Google</button>
@@ -33,12 +31,14 @@
             </div>
         </form>
     </header>
-    <div class="container" id="nav">
-    <table class="table">
+    <div class="container " id="nav">
+        <table class="table nav_table" id="common-website" >
         <tr>
-            <td><a href="">校园网站</a></td>
-            <td class="nav-select"><a href="">热门</a></td>
-            <td class="nav-select"><a href="">全部</a></td>
+            <!--<td rowspan="6" style="text-align: center"><</td>-->
+            <td colspan="5"><a href="">校园网站</a></td>
+            <td class="nav-select"><a href=""></a></td>
+            <td class="nav-select"><a href=""></a></td>
+            <!--<td rowspan="6">></td>-->
         </tr>
         <tr>
             <td class="nav-logo" rowspan="4"></td>
@@ -47,135 +47,109 @@
             <td><a href="http://lib.hfut.edu.cn" target="_blank">图书馆</a></td>
             <td><a href="http://gdjy.hfut.edu.cn" target="_blank">工大信息就业网</a></td>
             <td><a href="http://bbs.hfut.edu.cn/" target="_blank">青春无名论坛</a></td>
+
         </tr>
         <tr>
-            <td>教务系统</td>
-            <td>教务办公室</td>
-            <td>未来算法研究所 </td>
-            <td>校区主页</td>
-            <td>信息工程系</td>
+            <td><a href="">教务系统</a></td>
+            <td><a href="">教务办公室</a></td>
+            <td><a href="">未来算法研究所</a> </td>
+            <td><a href="">校区主页</a></td>
+            <td><a href="">信息工程系</a></td>
         </tr>
         <tr>
-            <td>机械工程系</td>
-            <td>英语视听说</td>
-            <td>商学系</td>
-            <td>工大主页</td>
-            <td>学工在线</td>
+            <td><a href="">机械工程系</a></td>
+            <td><a href="">英语视听说</a></td>
+            <td><a href="">商学系</a></td>
+            <td><a href="">工大主页</a></td>
+            <td><a href="">学工在线</a></td>
         </tr>
         <tr>
-            <td>化工与食品加工系</td>
-            <td>建筑工程系</td>
+            <td><a href="">化工与食品加工系</a></td>
+            <td><a href="">建筑工程系</a></td>
         </tr>
+
     </table>
+        <table class="table nav_table" id="study-stuff" hidden>
+            <tr>
+                <!--<td rowspan="6" style="text-align: center"><</td>-->
+                <td colspan="5"><a href="">学习资料</a></td>
+                <td class="nav-select"><a href=""></a></td>
+                <td class="nav-select"><a href=""></a></td>
+                <!--<td rowspan="6">></td>-->
+            </tr>
+            <tr>
+                <td class="nav-logo" rowspan="4"></td>
+                <td><a href="http://172.18.72.18" target="_blank">八度空间</a></td>
+                <td><a href="http://121.251.19.119/live.aspx" target="_blank">IPTV</a></td>
+                <td><a href="http://lib.hfut.edu.cn" target="_blank">图书馆</a></td>
+                <td><a href="http://gdjy.hfut.edu.cn" target="_blank">工大信息就业网</a></td>
+                <td><a href="http://bbs.hfut.edu.cn/" target="_blank">青春无名论坛</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="">教务系统</a></td>
+                <td><a href="">教务办公室</a></td>
+                <td><a href="">未来算法研究所</a> </td>
+                <td><a href="">校区主页</a></td>
+                <td><a href="">信息工程系</a></td>
+            </tr>
+            <tr>
+                <td><a href="">机械工程系</a></td>
+                <td><a href="">英语视听说</a></td>
+                <td><a href="">商学系</a></td>
+                <td><a href="">工大主页</a></td>
+                <td><a href="">学工在线</a></td>
+            </tr>
+            <tr>
+                <td><a href="">化工与食品加工系</a></td>
+                <td><a href="">建筑工程系</a></td>
+            </tr>
+
+        </table>
+        <table class="table nav_table" id="reading-stuff" hidden>
+            <tr>
+                <!--<td rowspan="6" style="text-align: center"><</td>-->
+                <td colspan="5"><a href="">资讯阅读</a></td>
+                <td class="nav-select"><a href=""></a></td>
+                <td class="nav-select"><a href=""></a></td>
+                <!--<td rowspan="6">></td>-->
+            </tr>
+            <tr>
+                <td class="nav-logo" rowspan="4"></td>
+                <td><a href="http://172.18.72.18" target="_blank">八度空间</a></td>
+                <td><a href="http://121.251.19.119/live.aspx" target="_blank">IPTV</a></td>
+                <td><a href="http://lib.hfut.edu.cn" target="_blank">图书馆</a></td>
+                <td><a href="http://gdjy.hfut.edu.cn" target="_blank">工大信息就业网</a></td>
+                <td><a href="http://bbs.hfut.edu.cn/" target="_blank">青春无名论坛</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="">教务系统</a></td>
+                <td><a href="">教务办公室</a></td>
+                <td><a href="">未来算法研究所</a> </td>
+                <td><a href="">校区主页</a></td>
+                <td><a href="">信息工程系</a></td>
+            </tr>
+            <tr>
+                <td><a href="">机械工程系</a></td>
+                <td><a href="">英语视听说</a></td>
+                <td><a href="">商学系</a></td>
+                <td><a href="">工大主页</a></td>
+                <td><a href="">学工在线</a></td>
+            </tr>
+            <tr>
+                <td><a href="">化工与食品加工系</a></td>
+                <td><a href="">建筑工程系</a></td>
+            </tr>
+
+        </table>
     </div>
 </div>
-</canvas>
-    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/search.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
-    <script>
-    "use strict";
+    <script  src="js/beautiful.js"></script>
+    <script  src="js/nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    var canvas = document.getElementById('canvas'),
-            ctx = canvas.getContext('2d'),
-            w = canvas.width = window.innerWidth,
-            h = canvas.height = window.innerHeight,
-
-            hue = 217,
-            stars = [],
-            count = 0,
-            maxStars = 1200;
-
-    var canvas2 = document.createElement('canvas'),
-            ctx2 = canvas2.getContext('2d');
-    canvas2.width = 100;
-    canvas2.height = 100;
-    var half = canvas2.width / 2,
-            gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-    gradient2.addColorStop(0.025, '#fff');
-    gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
-    gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
-    gradient2.addColorStop(1, 'transparent');
-
-    ctx2.fillStyle = gradient2;
-    ctx2.beginPath();
-    ctx2.arc(half, half, half, 0, Math.PI * 2);
-    ctx2.fill();
-
-    // End cache
-
-    function random(min, max) {
-        if (arguments.length < 2) {
-            max = min;
-            min = 0;
-        }
-
-        if (min > max) {
-            var hold = max;
-            max = min;
-            min = hold;
-        }
-
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function maxOrbit(x, y) {
-        var max = Math.max(x, y),
-                diameter = Math.round(Math.sqrt(max * max + max * max));
-        return diameter / 2;
-    }
-
-    var Star = function() {
-
-        this.orbitRadius = random(maxOrbit(w, h));
-        this.radius = random(60, this.orbitRadius) / 12;
-        this.orbitX = w / 2;
-        this.orbitY = h / 2;
-        this.timePassed = random(0, maxStars);
-        this.speed = random(this.orbitRadius) / 900000;
-        this.alpha = random(2, 10) / 10;
-
-        count++;
-        stars[count] = this;
-    }
-
-    Star.prototype.draw = function() {
-        var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
-                y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
-                twinkle = random(10);
-
-        if (twinkle === 1 && this.alpha > 0) {
-            this.alpha -= 0.05;
-        } else if (twinkle === 2 && this.alpha < 1) {
-            this.alpha += 0.05;
-        }
-
-        ctx.globalAlpha = this.alpha;
-        ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
-        this.timePassed += this.speed;
-    }
-
-    for (var i = 0; i < maxStars; i++) {
-        new Star();
-    }
-
-    function animation() {
-        ctx.globalCompositeOperation = 'source-over';
-        ctx.globalAlpha = 0.8;
-        ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-        ctx.fillRect(0, 0, w, h)
-
-        ctx.globalCompositeOperation = 'lighter';
-        for (var i = 1, l = stars.length; i < l; i++) {
-            stars[i].draw();
-        };
-
-        window.requestAnimationFrame(animation);
-    }
-
-    animation();
-
-</script>
-<script src="js/beautiful.js"> </script>
 </body>
 </html>
