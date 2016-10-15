@@ -17,29 +17,32 @@ header form {
 
 table {
   margin-top: 5%;
-  color: #000;
-  background-color: white; }
+  color: white;
+  background-color: rgba(255, 255, 255, 0); }
+
+.table th, .table td {
+  border: 0px; }
 
 @-webkit-keyframes fadein {
   0% {
-    background-color: transparent; }
+    background-color: rgba(255, 255, 255, 0); }
   100% {
-    background-color: rgba(0, 0, 0, 0.3); } }
+    background-color: rgba(255, 255, 255, 0); } }
 @-moz-keyframes fadein {
   0% {
-    background-color: transparent; }
+    background-color: rgba(255, 255, 255, 0); }
   100% {
-    background-color: rgba(0, 0, 0, 0.3); } }
+    background-color: rgba(255, 255, 255, 0); } }
 @-o-keyframes fadein {
   0% {
-    background-color: transparent; }
+    background-color: rgba(255, 255, 255, 0); }
   100% {
-    background-color: rgba(0, 0, 0, 0.3); } }
+    background-color: rgba(255, 255, 255, 0); } }
 @keyframes fadein {
   0% {
-    background-color: transparent; }
+    background-color: rgba(255, 255, 255, 0); }
   100% {
-    background-color: rgba(0, 0, 0, 0.3); } }
+    background-color: rgba(255, 255, 255, 0); } }
 td:hover {
   cursor: pointer; }
   td:hover {
