@@ -1,23 +1,23 @@
 @-webkit-keyframes fadein {
   0% {
-    color: rgba(119, 0, 187, 0.5); }
+    color: rgba(170, 34, 255, 0.5); }
   100% {
-    color: #7700bb; } }
+    color: #aa22ff; } }
 @-moz-keyframes fadein {
   0% {
-    color: rgba(119, 0, 187, 0.5); }
+    color: rgba(170, 34, 255, 0.5); }
   100% {
-    color: #7700bb; } }
+    color: #aa22ff; } }
 @-o-keyframes fadein {
   0% {
-    color: rgba(119, 0, 187, 0.5); }
+    color: rgba(170, 34, 255, 0.5); }
   100% {
-    color: #7700bb; } }
+    color: #aa22ff; } }
 @keyframes fadein {
   0% {
-    color: rgba(119, 0, 187, 0.5); }
+    color: rgba(170, 34, 255, 0.5); }
   100% {
-    color: #7700bb; } }
+    color: #aa22ff; } }
 body {
   select: none;
   -webkit-user-select: none;
